@@ -8,11 +8,4 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent {
   title = 'ITApp';
-  isFormOpen: boolean = false;
-  showPassword = false;
-  model: any;
-
-  togglePassword() {
-    this.showPassword = !this.showPassword;
-  }
 }
