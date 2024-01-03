@@ -20,15 +20,17 @@
     <div *ngIf="isFormOpen" class="col-md-6 software-form-container">
         <h6>Add New Software</h6>
           <form>
-            <div>
-                <label for="name" class="form-label required-field">Software Name</label>
-                <input type="text" class="form-control" placeholder="Enter Software Name">
+            <div class="row">
+              <div class="col-md-12">
+                  <label for="name" class="form-label required-field" id="SoftwareName">Software Name</label>
+                  <input type="text" class="form-control" placeholder="Enter Software Name" id="SoftwareName">
+              </div>
             </div>
-  
+            
             <br>
   
             <div class="mb-6">
-                <label for="thumbnail" class="form-label">Software Thumbnail</label>
+                <label for="thumbnail" class="form-label" id="thumbnail">Software Thumbnail</label>
                 <div class="row">
   
                     <div class="picture">
@@ -76,41 +78,40 @@
     </div>
   
     <div class="col-md-6">
-      <label for="inputEmail4" class="form-label required-field">Software Version</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Enter software version">
+      <label for="softwareVersion" class="form-label required-field" id="softwareVersion">Software Version</label>
+      <input type="text" class="form-control" id="softwareVersion" placeholder="Enter software version">
     </div>
     
     <br>
   
     <div class="row">
-      <div class="col-md-4">
-        <label for="date" class="form-label required-field">Date of purchase</label>
-        <div class="input-group date">
-          <input type="date" class="form-control" id="date" placeholder="12-15-2023"/>
-        </div>
-    </div>
-
-      <div class="col-md-2">
-        <label for="date" class="form-label">Date</label>
-        <div class="input-group date" id="datepicker">
-          <input type="text" class="form-control" id="date"/>
-            <span class="input-group-append">
-              <span class="input-group-text bg-light d-block">
-                <i class="fa fa-calendar"></i>
-              </span>
-            </span>
-        </div>
+        <div class="col-md-4">
+          <label for="date" class="form-label required-field" id="date">Date of purchase</label>
+          <div class="input-group date">
+            <input type="date" class="form-control" id="date" placeholder="12-15-2023"/>
           </div>
-  
+        </div>
+
+        <div class="col-md-2">
+          <label for="date" class="form-label">Date</label>
+          <div class="input-group date" id="datepicker">
+            <input type="text" class="form-control" id="date"/>
+              <span class="input-group-append">
+                <span class="input-group-text bg-light d-block">
+                  <i class="fa fa-calendar"></i>
+                </span>
+              </span>
+          </div>
+        </div>
     </div>
   
     <br>
   
     <div class="col-md-6">
-      <label class="form-label">Activation Key</label>
+      <label class="form-label" id="ActivationKey">Activation Key</label>
       
         <div class="input-group">
-          <input [type] = " showPassword ? 'text': 'password' " class = "form-control" placeholder="Enter Activation Key">
+          <input [type] = " showPassword ? 'text': 'password' " class = "form-control" placeholder="Enter Activation Key" id="ActivationKey">
           <div class="input-group-append">
            
               <div class="toggle_hide_password">
@@ -122,5 +123,5 @@
         </div>
     </div>
   
-  </div>
+</div>
   

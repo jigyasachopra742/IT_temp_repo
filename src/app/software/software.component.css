@@ -171,3 +171,10 @@ input[type="checkbox"] {
     color: #FFF;
     margin-left: 170%;
 }
+
+@media (max-width: 1440px ) {
+    .alert {
+      max-width: 100%; /* Set the maximum width to 100% for smaller screens */
+    }
+  }
+
